@@ -20,7 +20,6 @@ extension UITableViewCell {
 }
 
 class Issue4Tests: QuickSpec {
-    
     override func spec() {
         
         describe("Issue4Tests") {
