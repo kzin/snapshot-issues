@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BA39E9961E85869000C1A219"
-               BuildableName = "SnapshotIssues.app"
-               BlueprintName = "SnapshotIssues"
-               ReferencedContainer = "container:SnapshotIssues.xcodeproj">
+               BlueprintIdentifier = "8E8C3224669F035DA4C6113B0B755C41"
+               BuildableName = "Pods_SnapshotIssues.framework"
+               BlueprintName = "Pods-SnapshotIssues"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BA39E9AA1E85869000C1A219"
-               BuildableName = "SnapshotIssuesTests.xctest"
-               BlueprintName = "SnapshotIssuesTests"
-               ReferencedContainer = "container:SnapshotIssues.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BA39E9961E85869000C1A219"
-            BuildableName = "SnapshotIssues.app"
-            BlueprintName = "SnapshotIssues"
-            ReferencedContainer = "container:SnapshotIssues.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -61,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BA39E9961E85869000C1A219"
-            BuildableName = "SnapshotIssues.app"
-            BlueprintName = "SnapshotIssues"
-            ReferencedContainer = "container:SnapshotIssues.xcodeproj">
+            BlueprintIdentifier = "8E8C3224669F035DA4C6113B0B755C41"
+            BuildableName = "Pods_SnapshotIssues.framework"
+            BlueprintName = "Pods-SnapshotIssues"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BA39E9961E85869000C1A219"
-            BuildableName = "SnapshotIssues.app"
-            BlueprintName = "SnapshotIssues"
-            ReferencedContainer = "container:SnapshotIssues.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

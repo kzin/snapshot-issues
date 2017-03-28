@@ -1,0 +1,43 @@
+PODS:
+  - Cartography (1.0.1)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Nimble (6.0.1)
+  - Nimble-Snapshots (4.4.0):
+    - Nimble-Snapshots/Core (= 4.4.0)
+  - Nimble-Snapshots/Core (4.4.0):
+    - FBSnapshotTestCase (~> 2.0)
+    - Nimble
+    - Quick
+  - Quick (1.1.0)
+
+DEPENDENCIES:
+  - Cartography
+  - FBSnapshotTestCase (from `https://github.com/cs-bruno-mazzo/ios-snapshot-test-case`, branch `feature/grid-tolerance`)
+  - Nimble
+  - Nimble-Snapshots
+  - Quick
+
+EXTERNAL SOURCES:
+  FBSnapshotTestCase:
+    :branch: feature/grid-tolerance
+    :git: https://github.com/cs-bruno-mazzo/ios-snapshot-test-case
+
+CHECKOUT OPTIONS:
+  FBSnapshotTestCase:
+    :commit: b68e6bdf0268bb543c39814fe917131595c4aeab
+    :git: https://github.com/cs-bruno-mazzo/ios-snapshot-test-case
+
+SPEC CHECKSUMS:
+  Cartography: c1460e99395b824d9d75360b0382faeb0b33dcd7
+  FBSnapshotTestCase: 8e42bcb739e3248b65dd0b04d720e69e4024dcee
+  Nimble: 1527fd1bd2b4cf0636251a36bc8ab37e81da8347
+  Nimble-Snapshots: e743439f26c2fa99d8f7e0d7c01c99bcb40aa6f2
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+
+PODFILE CHECKSUM: 9505eacc80604586fed2a45380abe1116f0b4cde
+
+COCOAPODS: 1.2.0
