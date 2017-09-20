@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		52A13AA8EC8A06A31236E96D /* Pods_SnapshotIssues.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64DBC0C347B7267B616BBE8 /* Pods_SnapshotIssues.framework */; };
 		B96D95D7AFA72F4AE56AC9E8 /* Pods_SnapshotIssues_SnapshotIssuesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8058B631F194E39574B6C06 /* Pods_SnapshotIssues_SnapshotIssuesTests.framework */; };
+		BA06FE2D1F671DDD00DF9272 /* Issue4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E9C81E858FE400C1A219 /* Issue4Tests.swift */; };
+		BA06FE2E1F67258C00DF9272 /* Issue1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E9C01E85878600C1A219 /* Issue1Tests.swift */; };
+		BA06FE2F1F67258F00DF9272 /* Issue2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E9C21E85893800C1A219 /* Issue2Tests.swift */; };
+		BA06FE301F67259100DF9272 /* Issue3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E9C41E858CE600C1A219 /* Issue3Tests.swift */; };
 		BA39E99B1E85869000C1A219 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E99A1E85869000C1A219 /* AppDelegate.swift */; };
 		BA39E99D1E85869000C1A219 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E99C1E85869000C1A219 /* ViewController.swift */; };
 		BA39E9A01E85869000C1A219 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA39E99E1E85869000C1A219 /* Main.storyboard */; };
@@ -17,15 +21,9 @@
 		BA39E9BB1E8586A400C1A219 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E9BA1E8586A400C1A219 /* LoginView.swift */; };
 		BA39E9BE1E8586C800C1A219 /* SFDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA39E9BC1E8586C800C1A219 /* SFDisplay-Bold.otf */; };
 		BA39E9BF1E8586C800C1A219 /* SFDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BA39E9BD1E8586C800C1A219 /* SFDisplay-Regular.otf */; };
-		BA39E9C11E85878600C1A219 /* Issue1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E9C01E85878600C1A219 /* Issue1Tests.swift */; };
-		BA39E9C31E85893800C1A219 /* Issue2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E9C21E85893800C1A219 /* Issue2Tests.swift */; };
-		BA39E9C51E858CE600C1A219 /* Issue3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E9C41E858CE600C1A219 /* Issue3Tests.swift */; };
 		BA39E9C71E858FCB00C1A219 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E9C61E858FCB00C1A219 /* UserCell.swift */; };
-		BA39E9C91E858FE400C1A219 /* Issue4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E9C81E858FE400C1A219 /* Issue4Tests.swift */; };
 		BA39E9CB1E85904C00C1A219 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E9CA1E85904C00C1A219 /* User.swift */; };
-		BA39E9CD1E85946500C1A219 /* Issue5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E9CC1E85946500C1A219 /* Issue5Tests.swift */; };
 		BA39E9CF1E85957F00C1A219 /* ButtonXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA39E9CE1E85957F00C1A219 /* ButtonXIB.xib */; };
-		BA39E9D11E8595BF00C1A219 /* Issue6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E9D01E8595BF00C1A219 /* Issue6Tests.swift */; };
 		BA39E9D31E8595DB00C1A219 /* ButtonXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA39E9D21E8595DB00C1A219 /* ButtonXIB.swift */; };
 /* End PBXBuildFile section */
 
@@ -279,13 +277,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnapshotIssues-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		32D47CAE900ADDDBB926DDF6 /* [CP] Check Pods Manifest.lock */ = {
@@ -294,13 +295,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnapshotIssues-SnapshotIssuesTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AC786870894DD3CBCB833D9D /* [CP] Embed Pods Frameworks */ = {
@@ -309,9 +313,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SnapshotIssues/Pods-SnapshotIssues-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -324,9 +331,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SnapshotIssues-SnapshotIssuesTests/Pods-SnapshotIssues-SnapshotIssuesTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -383,12 +401,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA39E9C91E858FE400C1A219 /* Issue4Tests.swift in Sources */,
-				BA39E9CD1E85946500C1A219 /* Issue5Tests.swift in Sources */,
-				BA39E9D11E8595BF00C1A219 /* Issue6Tests.swift in Sources */,
-				BA39E9C51E858CE600C1A219 /* Issue3Tests.swift in Sources */,
-				BA39E9C31E85893800C1A219 /* Issue2Tests.swift in Sources */,
-				BA39E9C11E85878600C1A219 /* Issue1Tests.swift in Sources */,
+				BA06FE2F1F67258F00DF9272 /* Issue2Tests.swift in Sources */,
+				BA06FE2D1F671DDD00DF9272 /* Issue4Tests.swift in Sources */,
+				BA06FE2E1F67258C00DF9272 /* Issue1Tests.swift in Sources */,
+				BA06FE301F67259100DF9272 /* Issue3Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

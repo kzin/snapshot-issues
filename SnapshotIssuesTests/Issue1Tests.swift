@@ -30,7 +30,7 @@ class Issue1Tests: QuickSpec {
             }
             
             it("should have a cool layout") {
-                expect(view) == snapshot("iOS10.2")
+                expect(view) == snapshot()
             }
         }
     }

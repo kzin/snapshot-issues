@@ -35,7 +35,7 @@ class Issue2Tests: QuickSpec {
             
             it("should have a cool layout") {
                 view.userNameTextField.placeholder = ""
-                expect(view) == snapshot("iOS10.2")
+                expect(view) == snapshot()
             }
         }
     }

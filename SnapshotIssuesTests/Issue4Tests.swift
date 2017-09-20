@@ -36,7 +36,7 @@ class Issue4Tests: QuickSpec {
             }
             
             it("should have cool layout when load a user") {
-                expect(cell) == snapshot("iOS10.2")
+                expect(cell) == snapshot()
             }
         }
     }
